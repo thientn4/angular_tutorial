@@ -1,0 +1,12 @@
+<div class="progress">
+	<!--
+    TODO: set 
+      style.background-color based on the audio feature's color
+      style.width via the audio feature's percent. 
+      Display feature name and percent.
+    style="width:50%; background-color: green;"
+  -->
+  <div class="progress-bar" role="progressbar" [ngStyle] = "{'background-color':'rgb('+200+','+(255*percent/100)+','+(255-255*percent/100)+')','width':percent+'%'}">
+  	<span class="progress-bar-text">{{name}}: {{percent}}%</span>
+  </div>
+</div>

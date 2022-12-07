@@ -1,0 +1,5 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    background: radial-gradient(circle, rgba(24,22,92,1) 0%, rgba(2,15,18,1) 100%, rgba(68,68,140,1) 100%);
+    overflow-y: hidden;
+}

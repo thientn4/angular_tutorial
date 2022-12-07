@@ -1,0 +1,30 @@
+<app-handtracker (onPrediction)="prediction($event)"></app-handtracker>
+
+<!-- <div [innerHTML]="gesture" style="color:white"></div>
+<div [innerHTML]="gesTarget" style="color:white"></div> -->
+
+<div id="body">
+    <div id="stop">
+        <h1>👌Stop</h1>
+    </div>
+
+    <div id="score_board">
+        <h1>Score: {{score}}/{{total}}</h1>
+    </div>
+
+    <div id="start_title">
+        <h1>Let's start!</h1>
+    </div>
+
+    <div id="scroll">
+        <div class="scroll-element">
+            <div class="unit">{{ges1}}</div>
+            <div class="unit">{{ges2}}</div>
+            <div class="unit">{{ges3}}</div>
+        </div>
+        <div class="scroll-element">
+            <div class="unit">{{ges1}}</div>
+        </div>
+    </div>
+<!--<button (click)="gameSetup()">click me</button> -->
+</div>

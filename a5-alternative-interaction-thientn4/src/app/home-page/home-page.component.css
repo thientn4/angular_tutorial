@@ -1,0 +1,72 @@
+#stop{
+    position:fixed;
+    top:5px;
+    left:20px;
+    font-family:'Segoe UI';
+    color: white;
+}
+#score_board{
+    position:fixed;
+    top:5px;
+    right:18px;
+    font-family:'Segoe UI';
+    color: white;
+}
+#start_title{
+    position:fixed;
+    top:30%;
+    font-family:'Segoe UI';
+    font-size:x-large;
+    color: white;
+}
+#body{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#scroll{
+    width:40vw;
+}
+.unit{
+    font-size: 30vh;
+    height:150vh;
+    color:white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.scroll-element {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0%;
+}
+ 
+#primary {
+    animation: primary 6s linear infinite;
+}
+
+
+#secondary {
+    animation: secondary 6s linear infinite;
+}
+
+@keyframes primary {
+    from {
+        top: 0vh;
+    }
+    to {
+        top: -450vh;
+    }
+}
+  
+@keyframes secondary {
+    from {
+        top: 450vh;
+    }
+    to {
+        top: 0vh;
+    }
+}

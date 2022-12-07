@@ -1,0 +1,23 @@
+<ion-content [fullscreen]="true">
+  <ion-row id="container" class="ion-justify-content-between">
+    <ion-col>
+      <h1>Let's log</h1>
+    </ion-col>
+    <ion-col>
+      <ion-slides pager>
+        <ion-slide>
+          <div class = "option" (click)="toPage('/sleep-view')">
+            <img src="../../assets/icon/sleep.png">
+            <h1>sleep</h1>
+          </div>
+        </ion-slide>
+        <ion-slide>
+          <div class = "option" (click)="toPage('/sleepiness-view')">
+              <img src="../../assets/icon/sleepiness.png">
+              <h1>sleepiness</h1>
+          </div>
+        </ion-slide>
+      </ion-slides>
+    </ion-col>
+  </ion-row>
+</ion-content>

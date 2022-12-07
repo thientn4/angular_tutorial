@@ -1,0 +1,43 @@
+<ion-header no-border>
+  <ion-toolbar color="light">
+    <div style="text-align: center;">
+      <ion-title class="ion-no-padding">
+        Sleepiness history
+      </ion-title>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-slides pager #slides>
+    <ion-slide *ngFor="let data of sleepinessData;">
+      <div class="slide">
+        <div>
+          <div class="logDate"><h4><strong>{{toDate(data.loggedAt)}}</strong></h4></div>
+          <div class="logTime"><h4><strong>{{toTime(data.loggedAt)}}</strong></h4></div>
+        </div>
+        <div class="scale_center">
+          <div class="scale">
+            <strong>{{data.loggedValue}}</strong>
+          </div>
+        </div>
+        <div>
+          {{getSleepinessString(data.loggedValue)}}
+        </div>
+      </div>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
+
+<ion-footer no-border>
+  <ion-toolbar color="light">
+    <div class="buttons_wrapper">
+      <div class="button_wrapper">
+        <img src="../../assets/icon/back.png" style="height: 10vh;" (click)="toPage('/home')">
+      </div>
+      <div class="button_wrapper">
+        <img src="../../assets/icon/add.png" style="height: 10vh;" (click)="toPage('/sleepiness-log')">
+      </div>
+    </div>
+  </ion-toolbar>
+</ion-footer>

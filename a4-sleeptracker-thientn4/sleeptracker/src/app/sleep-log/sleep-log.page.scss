@@ -1,0 +1,15 @@
+.buttons_wrapper{
+    text-align: center;
+    height:14vh;
+    display:flex;
+    justify-content: space-evenly;
+}
+.button_wrapper{
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.calendar_wrapper{
+    width:100%; 
+    height:72vh;
+}

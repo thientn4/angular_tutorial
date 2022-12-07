@@ -1,0 +1,37 @@
+<ion-header no-border>
+  <ion-toolbar color="light">
+    <div style="text-align: center;">
+      <ion-title class="ion-no-padding">
+        {{title}}
+      </ion-title>
+    </div>
+  </ion-toolbar>
+</ion-header>
+<!--https://ionicframework.com/docs/api/datetime-->
+<ion-content>
+  <ion-slides pager (ionSlideDidChange)="slideChanged($event)" #slides>
+    <ion-slide>
+      <div class="calendar_wrapper">
+        <ion-datetime [(ngModel)]="start_time" [max]="current_time"></ion-datetime>
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div class="calendar_wrapper">
+        <ion-datetime [(ngModel)]="end_time" [min]="start_time" [max]="current_time"></ion-datetime>
+      </div>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
+
+<ion-footer no-border>
+  <ion-toolbar color="light">
+    <div class="buttons_wrapper">
+      <div class="button_wrapper">
+        <img src="../../assets/icon/accept.png" style="height: 10vh;" (click)="toPage('/sleep-view',true)">
+      </div>
+      <div class="button_wrapper">
+        <img src="../../assets/icon/cancel.png" style="height: 10vh;" (click)="toPage('/sleep-view',false)">
+      </div>
+    </div>
+  </ion-toolbar>
+</ion-footer>

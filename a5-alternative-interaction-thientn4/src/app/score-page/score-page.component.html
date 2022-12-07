@@ -1,0 +1,16 @@
+<app-handtracker (onPrediction)="prediction($event)"></app-handtracker>
+
+<div id="body">
+    <div id="score_title">
+        <h1>You scored {{score}}/{{total}}</h1>
+    </div>
+    <div id="detail_board">
+        <div id="detail_card" *ngFor="let number of [0,1,2,3,4,5]">
+            <h1>{{gesList[number]}}</h1>
+            <h1>{{gesScore[number]}}/{{gesTotal[number]}}</h1>
+        </div>
+    </div>
+    <div id="score_title">
+        <h1>✋ Exit</h1>
+    </div>
+</div>

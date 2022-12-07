@@ -1,0 +1,51 @@
+.buttons_wrapper{
+    text-align: center;
+    height:14vh;
+    display:flex;
+    justify-content: space-evenly;
+}
+.button_wrapper{
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.row{
+    display:flex;
+    flex-direction: row;
+}
+.logDate{
+    width:50%;
+    background-color:rgb(209, 209, 77);
+    text-align: center;
+}
+.logTime{
+    width:50%;
+    background-color:pink;
+    text-align: center;
+}
+.sleepData{
+    height:50px;
+    width:80vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sleep_icon{
+    height:50px;
+    width:20vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.icon_alligner{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+// hide scrollbar
+// ion-content {
+//     width: calc(100% + 40px);
+// }
+// ion-content::part(scroll) {
+//     padding-right: 15px;
+// }

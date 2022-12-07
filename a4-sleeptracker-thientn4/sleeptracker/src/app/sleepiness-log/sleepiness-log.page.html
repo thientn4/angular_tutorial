@@ -1,0 +1,39 @@
+<ion-header no-border>
+  <ion-toolbar color="light">
+    <div style="text-align: center;">
+      <ion-title class="ion-no-padding">
+        Log sleepiness
+      </ion-title>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-slides pager #slides>
+    <ion-slide *ngFor="let data of allScale;">
+      <div class="slide">
+        <div class="scale_center">
+          <div class="scale">
+            <strong>{{data}}</strong>
+          </div>
+        </div>
+        <div>
+          {{getSleepinessString(data)}}
+        </div>
+      </div>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
+
+<ion-footer no-border>
+  <ion-toolbar color="light">
+    <div class="buttons_wrapper">
+      <div class="button_wrapper">
+        <img src="../../assets/icon/accept.png" style="height: 10vh;" (click)="toPage('/sleepiness-view',true)">
+      </div>
+      <div class="button_wrapper">
+        <img src="../../assets/icon/cancel.png" style="height: 10vh;" (click)="toPage('/sleepiness-view',false)">
+      </div>
+    </div>
+  </ion-toolbar>
+</ion-footer>
